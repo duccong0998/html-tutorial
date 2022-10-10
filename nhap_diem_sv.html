@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập điểm sinh viên</title>
+</head>
+<body>
+<label for="vl">Vật Lý</label>
+<br>
+<input type="number" name="name" id="vl">
+<br>
+<label for="hh">Hóa Học</label>
+<br>
+<input type="number" name="name" id="hh">
+<br>
+<label for="hs">Sinh Học</label>
+<input type="number" name="name" id="hs" >
+<button type="button"  onclick="tinhtong()">abcxyz</button>
+<p id="1"></p>
+<p id="2"></p>
+<script>
+function tinhtong (){
+    let a = +document.getElementById('vl').value;
+    let b = +document.getElementById('hh').value;
+    let c = +document.getElementById('hs').value;
+    let d = a + b + c;
+    let e = (a + b + c)/3
+  //  document.getElementById('1').innerHTML = ("Tổng = " + d)
+  // document.getElementById('2').innerHTML  = ("Trung Bình Cộng = " + e)
+
+document.write('Tổng = ' + d)
+    document.write('<br>')
+document.write('Trung Bình Cộng = ' + e)
+
+}
+
+
+</script>
+
+</body>
+</html>
