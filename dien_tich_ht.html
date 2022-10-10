@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Diện Tích Hình Tròn</title>
+</head>
+<body>
+<input type="number" id="r" placeholder="Bán kính">
+<input type="text" id="g" placeholder="Diện tích">
+<button type="button" onclick="hinhtron()">ok</button>
+<script>
+  function hinhtron(){
+    let a = document.getElementById('r').value;
+    let b = a * 3.14
+document.getElementById('g').value = b
+  }
+</script>
+</body>
+</html>
