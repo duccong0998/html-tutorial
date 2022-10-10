@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi nhiệt độ</title>
+</head>
+<body>
+<input type="number" id="c"> Độ C
+<button type="button" onclick="chuyendoi()">Chuyển</button>
+<input id="t">
+<script>
+    function chuyendoi(){
+let a = +document.getElementById("c").value;
+let b = (a * 9 + 160) / 5;
+        document.getElementById('t').value = b;
+    }
+</script>
+</body>
+</html>
