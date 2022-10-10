@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+<input type="number" id="num1" placeholder="Nhập số thứ nhất">
+<input type="number" id="num2" placeholder="Nhập số thứ hai">
+<button type="button" onclick="tinhtong()">Cộng</button>
+<button type="button" onclick = "hieu()">Trừ</button>
+<p>Kết quả :</p>
+<div id="f">Đây là kết quả</div>
+</body>
+<script>
+function tinhtong() {
+let a = +document.getElementById("num1").value; //"7"
+let b = +document.getElementById("num2").value; //"9"
+let c = a + b;
+document.getElementById("f").innerHTML = c;
+
+}
+function hieu() {
+    let a = +document.getElementById("num1").value; //"7"
+    let b = +document.getElementById("num2").value; //"9"
+    let c = a - b;
+    document.getElementById("f").innerHTML = c;
+}</script>
+</html>
