@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<body>
+<input type="button" value="click" id="btn" onmouseout="okk(event)"; onmouseover="noo(event)"; onclick="yee(event)">
+<script>
+    function okk(event) {
+      let a = document.getElementById('btn');
+        a.style.color = 'red';
+       a.style.background = 'black'
+    }
+function noo(event) {
+        let b = document.getElementById('btn');
+        b.style.color = 'pink';
+        b.style.background = 'green'
+}
+function yee(event) {
+      let c = document.write('Xin Chao');
+}
+</script>
+</body>
+</html>

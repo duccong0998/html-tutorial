@@ -15,4 +15,5 @@ function xuLyKetQua() {
 function xoa() {
     document.getElementById('result').innerHTML = '0';
     result = '';
+    
 }
