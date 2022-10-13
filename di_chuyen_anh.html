@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZoZo noa</title>
+</head>
+<body onload="docReady()">
+<img id="zozo"
+     src="http://4.bp.blogspot.com/-0qMRrcmCp3c/VlwOf16juRI/AAAAAAAAQwI/spmDNlvmUIo/s1600/52e1fed43cbe9cd356c19653c48166ff.jpg"
+     style="position:absolute;left:0; top:0;" height="400" width="320"/>
+<script>
+    function aa() {
+        let up = document.getElementById('zozo');
+        up.style.top = parseInt(up.style.top) - 5 + 'px';
+    }
+
+    function bb() {
+        let down = document.getElementById('zozo');
+        down.style.top = parseInt(down.style.top) + 5 + 'px';
+    }
+
+    function cc() {
+        let left = document.getElementById('zozo');
+        left.style.left = parseInt(left.style.left) - 5 + 'px';
+    }
+
+    function dd() {
+        let right = document.getElementById('zozo');
+        right.style.left = parseInt(right.style.left) + 5 + 'px';
+    }
+
+    function dichuyen(f) {
+        switch (f.keyCode) {
+            case 38 :
+                aa();
+                break;
+            case 40 :
+                bb();
+                break;
+            case 37 :
+                cc();
+                break;
+            case 39 :
+                dd();
+                break
+        }
+    }
+
+    function docReady() {
+        window.addEventListener('keydown', dichuyen);
+    }
+</script>
+</body>
+</html>
