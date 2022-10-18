@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="g">
+<input  type="button" value="Add" onclick="them()">
+<script>
+    function them() {
+        let array = []
+        array = document.getElementById("g").value.split("")
+        console.log(array)
+    }
+    // const name = nGuyeN DUc ConG
+    // const convertName = (name) => {
+    //     const lowName = name.toLowerCase().split(' ');
+    //     return lowName.map(item => {
+    //         return item.charAt(0).toUpperCase() + item.slice(1).toLowerCase();
+    //     }).join(' ')
+    // }
+    // // Log to console
+    // console.log(convertName(name))
+</script>
+
+</body>
+</html>

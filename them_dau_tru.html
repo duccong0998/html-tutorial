@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Them dau tru truoc so chan</title>
+</head>
+<body>
+<script>
+  let a = window.prompt()
+  let b = a.toString()
+  let c = [b[0]]
+  for(let x =1; x < b.length; x++) {
+    if((b[x -1] % 2 === 0)&&(b[x] % 2 === 0))
+    {
+      c.push("-", b[x]);
+    } else {
+      c.push(b[x])
+    }
+  }
+  document.write(c.join(''))
+</script>
+
+</body>
+</html>
