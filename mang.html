@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng</title>
+</head>
+<body>
+<script>
+//     let arr = [];
+//   let n = prompt()
+//     let c = 0;
+// for (let i = 0; i < n; i++){
+//     arr[i] = +prompt('phần tử '+ (i+1))
+//     c = c + arr[i];
+// }
+//
+// document.write(arr + "<br>" + "Tổng:" + c);
+
+
+// let arr = [];
+// let n = prompt()
+// let c = 0;
+// for (let i = 0; i < n; i++){
+//     arr[i] = +prompt('phần tử '+ (i+1))
+//     if (arr[i] % 5 == 2) {
+//         c = c + arr[i];
+//     }
+// }
+// document.write(arr + "<br>" + "Tổng:" + c);
+//
+//
+
+
+
+// let arr = [];
+// let n = prompt()
+// let c = 0;
+// for (let i = 0; i < n; i++){
+//     arr[i] = +prompt('phần tử '+ (i+1))
+//     if (arr[i] % 6 == 0) {
+//         c = c + arr[i];
+//     }
+// }
+// document.write(arr + "<br>" + "Tổng:" + c);
+
+
+
+// let arr = [];
+// let n = prompt()
+// let c = 0;
+// for (let i = 0; i < n; i++){
+//     arr[i] = +prompt('phần tử '+ (i+1))
+//     if (arr[i] > 10 && arr[i] % 4 == 3) {
+//         c = c + arr[i];
+//     }
+// }
+// document.write(arr + "<br>" + "Tổng:" + c);
+
+
+let arr = [];
+let n = prompt()
+
+let max = 0;
+for (let i = 0; i < n; i++){
+    arr[i] = +prompt('phần tử '+ (i+1))
+    if (max < arr[i] && arr[i] % 2 !== 0){
+        max = arr[i]
+
+    }
+    // document.write(max + "<br>" + " vị trí max lẻ:" + arr[i].indexOf())
+}
+document.write(max + "<br>" + " vị trí max lẻ:" + (arr.length-1))
+
+
+
+</script>
+
+</body>
+</html>
