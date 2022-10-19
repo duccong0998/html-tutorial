@@ -6,15 +6,65 @@
 </head>
 <body>
 <script>
-  let a = +prompt("Nhập")
-  let b = +prompt("Nhập")
-  let c = +prompt("Nhập")
-  if (a + b > c && b + c > a && a + c > b ) {
-    document.write("Đây là 1 tam giác");
-  }
-  else {
-    document.write("Đây không phải 1 tam giác");
-  }
+    let a = +prompt("Nhập")
+    let b = +prompt("Nhập")
+    let c = +prompt("Nhập")
+    if (a + b > c && b + c > a && a + c > b ) {
+        if (a == b && b == c && a == c) {
+            document.write("Đây là 1 tam giác đều");
+        } else {
+            document.write("Đây không phải là 1 tam giác đều")
+        }
+    }
+    else {
+        document.write("Đây không phải 1 tam giác");
+    }
+
+
+
+    // let a = +prompt("Nhập")
+    // let b = +prompt("Nhập")
+    // let c = +prompt("Nhập")
+    // if (a + b > c && b + c > a && a + c > b ) {
+    //     if (a*a + b*b == c*c || b*b + c*c == a*a || a*a + c*c == b*b) {
+    //         document.write("Đây là 1 tam giác vuông");
+    //     } else {
+    //         document.write("Đây không phải là 1 tam giác vuông")
+    //     }
+    // }
+    // else {
+    //     document.write("Đây không phải 1 tam giác");
+    // }
+
+
+
+
+    // let a = +prompt("Nhập")
+    // let b = +prompt("Nhập")
+    // let c = +prompt("Nhập")
+    // if (a + b > c && b + c > a && a + c > b ) {
+    //     if (a == b || b == c || a == c) {
+    //         document.write("Đây là 1 tam giác cân");
+    //     } else {
+    //         document.write("Đây không phải là 1 tam giác cân")
+    //     }
+    // }
+    // else {
+    //     document.write("Đây không phải 1 tam giác");
+    // }
+
+
+
+
+  // let a = +prompt("Nhập")
+  // let b = +prompt("Nhập")
+  // let c = +prompt("Nhập")
+  // if (a + b > c && b + c > a && a + c > b ) {
+  //   document.write("Đây là 1 tam giác");
+  // }
+  // else {
+  //   document.write("Đây không phải 1 tam giác");
+  // }
 </script>
 </body>
 </html>
